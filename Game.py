@@ -254,14 +254,16 @@ class Mob(pg.sprite.Sprite):
         mob.speedx = random.randrange(-1, 1)
         if (lvl >= 1):
             mob.speedy = 1
-        if (lvl >= 3):
+        if (lvl >= 2):
             mob.speedy = random.randrange(1, 3)
-        if (lvl >= 5):
+        if (lvl >= 4):
             mob.speedy = random.randrange(3, 5)
-        if (lvl >= 7):
+        if (lvl >= 6):
             mob.speedy = random.randrange(5, 10)
-        if (lvl >= 9):
+        if (lvl >= 8):
             mob.speedy = random.randrange(5, 15)
+        if (lvl >= 10):
+            mob.speedy = random.randrange(10, 20)
         
     def update(mob):
         mob.rect.x += mob.speedx
