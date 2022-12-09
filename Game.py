@@ -29,7 +29,7 @@ YELLOW = (255, 255, 0)
 pg.init()
 pg.mixer.init()
 screen = pg.display.set_mode((W, H))
-pg.display.set_caption("Shoot’em up")
+pg.display.set_caption("Space warrior")
 clock = pg.time.Clock()
 
 fontname = pg.font.match_font('verdana')
@@ -119,7 +119,7 @@ def show_menu():
                 elif (W/2 - 100 <= mouse[0] <= W/2+100 and H-350 <= mouse[1] <= H-300):
                     menu = False
         screen.blit(background, background_rect)
-        text(screen, 'Shoot’em up', '', 64, W / 2, H - 580)
+        text(screen, 'Space warrior', '', 64, W / 2, H - 580)
         text(screen, 'Управление:', '', 20, W / 2, H - 500)
         text(screen, 'стрелочки <-  -> для передвижения', '', 18, W / 2, H - 480)
         text(screen, '"пробел" чтобы стрелять', '', 18, W / 2, H - 460)
